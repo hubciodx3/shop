@@ -20,45 +20,45 @@
 <body>
     <header>
         <div class="page-header">
-        <div class="page-logo">
-            <a href="index.html">
-                <span class="page-logo">
-                    Maison
-                </span>
-            </a>
+            <div class="page-logo">
+                <a href="index.html">
+                    <span class="page-logo">
+                        Maison
+                    </span>
+                </a>
+            </div>
+            <nav class="page-nav">
+                <ul class="navigation-menu">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Sklep</a>
+                    </li>
+                    <li>
+                        <a href="#">Kontakt</a>
+                    </li>
+                    <li>
+                        <a href="#">O nas</a>
+                    </li>
+                    <li>
+                        <a href="#">Koszyk</a>
+                    </li>
+                </ul>
+                <button type="button" title="Open menu" class="hamburger">
+                    <span class="hamburger-icon">
+                        <i class="fas fa-bars" id="open-icon"></i>
+                    </span>
+                    <span class="close-icon">
+                        <i class="fas fa-times"></i>
+                    </span>
+                </button>
+            </nav>
+            <div class="cart">
+                <i class="fas fa-shopping-cart"></i>
+                <div class="var">0</div>
+            </div>
         </div>
-        <nav class="page-nav">
-            <ul class="navigation-menu">
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="#">Sklep</a>
-                </li>
-                <li>
-                    <a href="#">Kontakt</a>
-                </li>
-                <li>
-                    <a href="#">O nas</a>
-                </li>
-                <li>
-                    <a href="#">Koszyk</a>
-                </li>
-            </ul>
-            <button type="button" title="Open menu" class="hamburger">
-                <span class="hamburger-icon">
-                    <i class="fas fa-bars" id="open-icon"></i>
-                </span>
-                <span class="close-icon">
-                    <i class="fas fa-times"></i>
-                </span>
-            </button>
-        </nav>
-        <div class="cart">
-            <i class="fas fa-shopping-cart"></i>
-            <div class="var">0</div>
-        </div>
-    </div>
     </header>
     <main>
         <article class="slider">
@@ -127,9 +127,9 @@
                 <section class="slide-bar">
                     <div class="category">
                         <div class="header">
-                            <h3 class="category_button">Kategorie
+                            <h4 class="category_button">Kategorie
                                 <i class="fas fa-caret-down"></i>
-                            </h3>
+                            </h4>
                         </div>
                         <div class="info" id="category_info">
                             <ul class="category_list">
@@ -159,10 +159,10 @@
                     </div>
                     <div class="filter">
                         <div class="header">
-                            <h3 class="filter_button">
+                            <h4 class="filter_button">
                                 <i class="fas fa-filter"></i>Filtruj
                                 <i class="fas fa-caret-down"></i>
-                            </h3>
+                            </h4>
                         </div>
                         <div class="info" id="filter_info">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, eveniet ratione. Facere dolor voluptatibus magni illo
@@ -174,52 +174,7 @@
                     <div class="single-item">
                         <img src="assets/item/1.png" alt="">
                         <div class="item_header">
-                            <h3>Bottle Humidifier</h3>
-                            <div class="price">
-                                <div class="hover">
-                                    <a href="#">
-                                        <i class="fas fa-shopping-cart"></i>Dodaj do koszyka</a>
-                                </div>
-                                <div class="normal">
-                                    69.00 PLN
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="single-item">
-                        <img src="assets/item/1.png" alt="">
-                        <div class="item_header">
-                            <h3>Bottle Humidifier</h3>
-                            <div class="price">
-                                <div class="hover">
-                                    <a href="#">
-                                        <i class="fas fa-shopping-cart"></i>Dodaj do koszyka</a>
-                                </div>
-                                <div class="normal">
-                                    69.00 PLN
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="single-item">
-                        <img src="assets/item/1.png" alt="">
-                        <div class="item_header">
-                            <h3>Bottle Humidifier</h3>
-                            <div class="price">
-                                <div class="hover">
-                                    <a href="#">
-                                        <i class="fas fa-shopping-cart"></i>Dodaj do koszyka</a>
-                                </div>
-                                <div class="normal">
-                                    69.00 PLN
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="single-item">
-                        <img src="assets/item/1.png" alt="">
-                        <div class="item_header">
-                            <h3>Bottle Humidifier</h3>
+                            <h4>Bottle Humidifier</h4>
                             <div class="price">
                                 <div class="hover">
                                     <a href="#">
@@ -235,7 +190,120 @@
                             </div>
                         </div>
                     </div>
-                    <a href="#">Pokaż więcej</a>
+                    <div class="single-item">
+                        <img src="assets/item/1.png" alt="">
+                        <div class="item_header">
+                            <h4>Bottle Humidifier</h4>
+                            <div class="price">
+                                <div class="hover">
+                                    <a href="#">
+                                        <a href="#">
+                                            <a href="#">
+                                                <i class="fas fa-shopping-cart"></i>Dodaj do koszyka</a>
+                                        </a>
+                                    </a>
+                                </div>
+                                <div class="normal">
+                                    69.00 PLN
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-item">
+                        <img src="assets/item/1.png" alt="">
+                        <div class="item_header">
+                            <h4>Bottle Humidifier</h4>
+                            <div class="price">
+                                <div class="hover">
+                                    <a href="#">
+                                        <a href="#">
+                                            <a href="#">
+                                                <i class="fas fa-shopping-cart"></i>Dodaj do koszyka</a>
+                                        </a>
+                                    </a>
+                                </div>
+                                <div class="normal">
+                                    69.00 PLN
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-item">
+                        <img src="assets/item/1.png" alt="">
+                        <div class="item_header">
+                            <h4>Bottle Humidifier</h4>
+                            <div class="price">
+                                <div class="hover">
+                                    <a href="#">
+                                        <a href="#">
+                                            <a href="#">
+                                                <i class="fas fa-shopping-cart"></i>Dodaj do koszyka</a>
+                                        </a>
+                                    </a>
+                                </div>
+                                <div class="normal">
+                                    69.00 PLN
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-item">
+                        <img src="assets/item/1.png" alt="">
+                        <div class="item_header">
+                            <h4>Bottle Humidifier</h4>
+                            <div class="price">
+                                <div class="hover">
+                                    <a href="#">
+                                        <a href="#">
+                                            <a href="#">
+                                                <i class="fas fa-shopping-cart"></i>Dodaj do koszyka</a>
+                                        </a>
+                                    </a>
+                                </div>
+                                <div class="normal">
+                                    69.00 PLN
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-item">
+                        <img src="assets/item/1.png" alt="">
+                        <div class="item_header">
+                            <h4>Bottle Humidifier</h4>
+                            <div class="price">
+                                <div class="hover">
+                                    <a href="#">
+                                        <a href="#">
+                                            <a href="#">
+                                                <i class="fas fa-shopping-cart"></i>Dodaj do koszyka</a>
+                                        </a>
+                                    </a>
+                                </div>
+                                <div class="normal">
+                                    69.00 PLN
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-item">
+                        <img src="assets/item/1.png" alt="">
+                        <div class="item_header">
+                            <h4>Bottle Humidifier</h4>
+                            <div class="price">
+                                <div class="hover">
+                                    <a href="#">
+                                        <a href="#">
+                                            <a href="#">
+                                                <i class="fas fa-shopping-cart"></i>Dodaj do koszyka</a>
+                                        </a>
+                                    </a>
+                                </div>
+                                <div class="normal">
+                                    69.00 PLN
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </section>
             </div>
         </article>
@@ -257,21 +325,18 @@
                                     <input type="hidden" name="_wpcf7_container_post" value="0">
                                 </div>
                                 <p>
-                                    <label> Adres email
-                                        <br>
-                                        <span class="wpcf7-form-control-wrap your-email">
-                                            <input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
-                                                aria-required="true" aria-invalid="false">
-                                        </span>
+
+                                    <span class="wpcf7-form-control-wrap your-email">
+                                        <input type="email" name="your-email" placeholder="Wpisz swój email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
+                                            aria-required="true" aria-invalid="false">
+                                    </span>
                                     </label>
                                 </p>
                                 <p>
-                                    <label> Treść wiadomości
-                                        <br>
-                                        <span class="wpcf7-form-control-wrap your-message">
-                                            <textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea"
-                                                aria-invalid="false"></textarea>
-                                        </span>
+
+                                    <span class="wpcf7-form-control-wrap your-message">
+                                        <textarea placeholder="Treść ..." name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false"></textarea>
+                                    </span>
                                     </label>
                                 </p>
                                 <p>
