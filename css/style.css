@@ -56,13 +56,18 @@ header {
 }
 
 .page-header .page-logo {
-  color: #000000;
+  color: #434142;
   font-size: 32px;
   text-align: center;
   text-transform: uppercase;
   font-family: 'Maison Neue', sans-serif;
   font-weight: bold;
   padding: 20px 0 20px 0;
+}
+
+.page-header img {
+  width: 40px;
+  height: 40px;
 }
 
 .navigation-menu {
@@ -295,7 +300,8 @@ header {
   margin: 0;
 }
 
-.hover, .normal {
+.hover,
+.normal {
   height: 20px;
 }
 
@@ -324,12 +330,6 @@ header {
   padding: 5px;
   width: 50%;
   position: relative;
-}
-
-.item_header {
-  position: absolute;
-  left: 25px;
-  bottom: 15px;
 }
 
 .single-item img {
@@ -489,7 +489,6 @@ header {
   }
   .page-header .page-logo {
     text-align: left;
-    padding-left: 10px;
   }
   .page-header .page-nav .navigation-menu li a {
     color: #000000;
@@ -570,6 +569,11 @@ header {
   .wpcf7-submit {
     width: auto;
     float: right;
+  }
+  .item_header {
+    position: absolute;
+    left: 25px;
+    bottom: 15px;
   }
 }
 
