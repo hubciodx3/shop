@@ -166,8 +166,7 @@
                             </h4>
                         </div>
                         <div class="info" id="filter_info">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, eveniet ratione. Facere dolor voluptatibus magni illo
-                            ex soluta architecto eos ea, totam perferendis, amet autem omnis eius tempore sit dicta!
+                            <input type="text" id="range_03" name="example_name" value="" />
                         </div>
                     </div>
                 </section>
@@ -365,7 +364,19 @@
 <!-- Script -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="js/rangeSlider.js"></script>
 <script src="js/menu.js"></script>
+<script>
+    $("#range_03").ionRangeSlider({
+        type: "double",
+        grid: true,
+        min: 0,
+        max: 1000,
+        from: 200,
+        to: 800,
+        prefix: "$"
+    });
+</script>
 <!-- Script END-->
 
 </html>

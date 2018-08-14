@@ -1,7 +1,11 @@
-var hamburger = document.querySelector(".hamburger");
-hamburger.addEventListener("click", function () {
-    document.querySelector(".page-header").classList.toggle("nav-opened");
-}, false);
+$( document ).ready(function() {
+    $( ".hamburger" ).click(function() {
+        $( ".page-header nav ul" ).toggle();
+      });
+      
+});
+
+
 
 var filter = document.querySelector(".filter_button");
 filter.addEventListener("click", function () {
