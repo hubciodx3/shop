@@ -55,6 +55,10 @@ header {
   border-bottom: 1px solid #eeeeee;
 }
 
+.page-header .page-logo {
+  padding: 20px 0 20px 0;
+}
+
 .page-header .page-logo span {
   color: #434142;
   font-size: 32px;
@@ -62,12 +66,20 @@ header {
   text-transform: uppercase;
   font-family: 'Maison Neue', sans-serif;
   font-weight: bold;
-  padding: 20px 0 20px 0;
 }
 
 .page-header .page-logo img {
   width: 40px;
   height: 40px;
+}
+
+.page-header .page-logo a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .page-header .nav-opened {

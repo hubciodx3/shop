@@ -54,6 +54,7 @@ header {
     color: #000000;
     border-bottom: 1px solid #eeeeee;
     .page-logo{
+        padding: 20px 0 20px 0;
         span {
             color: #434142;
             font-size: 32px;
@@ -61,11 +62,16 @@ header {
             text-transform: uppercase;
             font-family: 'Maison Neue', sans-serif;
             font-weight: bold;
-            padding: 20px 0 20px 0;
+            
         }
         img {
             width: 40px;
             height: 40px;
+        }
+        a
+        {
+            display: flex;
+            justify-content: center;
         }
 
     }
