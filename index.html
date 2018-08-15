@@ -31,7 +31,7 @@
                     </span>
                 </a>
             </div>
-            <nav >
+            <nav>
                 <ul>
                     <li>
                         <a href="index.html">Home</a>
@@ -51,10 +51,7 @@
                 </ul>
                 <button type="button" title="Open menu" class="hamburger">
                     <span class="hamburger-icon">
-                        <i class="fas fa-bars" id="open-icon"></i>
-                    </span>
-                    <span class="close-icon">
-                        <i class="fas fa-times"></i>
+                        <i class="fas fa-bars" id="hamburger-icon"></i>
                     </span>
                 </button>
             </nav>
@@ -130,183 +127,140 @@
             <div class="container">
                 <section class="slide-bar">
                     <div class="category">
-                        <div class="header">
-                            <h4 class="category_button">Kategorie
-                                <i class="fas fa-caret-down"></i>
-                            </h4>
-                        </div>
-                        <div class="info" id="category_info">
-                            <ul class="category_list">
-                                <li>
-                                    <a href="#">Wszystko</a>
-                                </li>
-                                <li>
-                                    <a href="#">Bawełny</a>
-                                </li>
-                                <li>
-                                    <a href="#">Pokrowce</a>
-                                </li>
-                                <li>
-                                    <a href="#">Koszulki</a>
-                                </li>
-                                <li>
-                                    <a href="#">Buty</a>
-                                </li>
-                                <li>
-                                    <a href="#">Skarpetki</a>
-                                </li>
-                                <li>
-                                    <a href="#">Czapki</a>
-                                </li>
-                            </ul>
-                        </div>
+                        <h4 class="category_button">Kategorie
+                            <i class="fas fa-caret-down"></i>
+                        </h4>
+                        <ul>
+                            <li>
+                                <a href="#">Wszystko</a>
+                            </li>
+                            <li>
+                                <a href="#">Bawełny</a>
+                            </li>
+                            <li>
+                                <a href="#">Pokrowce</a>
+                            </li>
+                            <li>
+                                <a href="#">Koszulki</a>
+                            </li>
+                            <li>
+                                <a href="#">Buty</a>
+                            </li>
+                            <li>
+                                <a href="#">Skarpetki</a>
+                            </li>
+                            <li>
+                                <a href="#">Czapki</a>
+                            </li>
+                        </ul>
                     </div>
                     <div class="filter">
-                        <div class="header">
                             <h4 class="filter_button">
                                 <i class="fas fa-filter"></i>Filtruj
                                 <i class="fas fa-caret-down"></i>
                             </h4>
-                        </div>
-                        <div class="info" id="filter_info">
+                        <div class="filter-container">
                             <input type="text" id="rangeSlider" name="rangeSlider" value="" />
                         </div>
                     </div>
                 </section>
-                <section class="items">
-                    <div class="single-item">
-                        <img src="assets/item/1.png" alt="">
-                        <div class="item_header">
-                            <h4>Bottle Humidifier</h4>
-                            <div class="price">
-                                <div class="hover">
-                                    <a href="#">
-                                        <a href="#">
-                                            <a href="#">
-                                                <i class="fas fa-shopping-cart"></i>Dodaj do koszyka</a>
-                                        </a>
-                                    </a>
-                                </div>
-                                <div class="normal">
+                <section class="items row">
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4">
+                        <div class="single-item">
+                            <img src="assets/item/1.png" alt="">
+                            <div class="item_header">
+                                <h4>Bottle Humidifier</h4>
+                                <div class="price">
                                     69.00 PLN
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="single-item">
-                        <img src="assets/item/1.png" alt="">
-                        <div class="item_header">
-                            <h4>Bottle Humidifier</h4>
-                            <div class="price">
-                                <div class="hover">
-                                    <a href="#">
-                                        <a href="#">
-                                            <a href="#">
-                                                <i class="fas fa-shopping-cart"></i>Dodaj do koszyka</a>
-                                        </a>
-                                    </a>
-                                </div>
-                                <div class="normal">
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4">
+                        <div class="single-item">
+                            <img src="assets/item/1.png" alt="">
+                            <div class="item_header">
+                                <h4>Bottle Humidifier</h4>
+                                <div class="price">
                                     69.00 PLN
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="single-item">
-                        <img src="assets/item/1.png" alt="">
-                        <div class="item_header">
-                            <h4>Bottle Humidifier</h4>
-                            <div class="price">
-                                <div class="hover">
-                                    <a href="#">
-                                        <a href="#">
-                                            <a href="#">
-                                                <i class="fas fa-shopping-cart"></i>Dodaj do koszyka</a>
-                                        </a>
-                                    </a>
-                                </div>
-                                <div class="normal">
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4">
+                        <div class="single-item">
+                            <img src="assets/item/1.png" alt="">
+                            <div class="item_header">
+                                <h4>Bottle Humidifier</h4>
+                                <div class="price">
                                     69.00 PLN
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="single-item">
-                        <img src="assets/item/1.png" alt="">
-                        <div class="item_header">
-                            <h4>Bottle Humidifier</h4>
-                            <div class="price">
-                                <div class="hover">
-                                    <a href="#">
-                                        <a href="#">
-                                            <a href="#">
-                                                <i class="fas fa-shopping-cart"></i>Dodaj do koszyka</a>
-                                        </a>
-                                    </a>
-                                </div>
-                                <div class="normal">
+
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4">
+                        <div class="single-item">
+                            <img src="assets/item/1.png" alt="">
+                            <div class="item_header">
+                                <h4>Bottle Humidifier</h4>
+                                <div class="price">
                                     69.00 PLN
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="single-item">
-                        <img src="assets/item/1.png" alt="">
-                        <div class="item_header">
-                            <h4>Bottle Humidifier</h4>
-                            <div class="price">
-                                <div class="hover">
-                                    <a href="#">
-                                        <a href="#">
-                                            <a href="#">
-                                                <i class="fas fa-shopping-cart"></i>Dodaj do koszyka</a>
-                                        </a>
-                                    </a>
-                                </div>
-                                <div class="normal">
+
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4">
+                        <div class="single-item">
+                            <img src="assets/item/1.png" alt="">
+                            <div class="item_header">
+                                <h4>Bottle Humidifier</h4>
+                                <div class="price">
                                     69.00 PLN
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="single-item">
-                        <img src="assets/item/1.png" alt="">
-                        <div class="item_header">
-                            <h4>Bottle Humidifier</h4>
-                            <div class="price">
-                                <div class="hover">
-                                    <a href="#">
-                                        <a href="#">
-                                            <a href="#">
-                                                <i class="fas fa-shopping-cart"></i>Dodaj do koszyka</a>
-                                        </a>
-                                    </a>
-                                </div>
-                                <div class="normal">
+
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4">
+                        <div class="single-item">
+                            <img src="assets/item/1.png" alt="">
+                            <div class="item_header">
+                                <h4>Bottle Humidifier</h4>
+                                <div class="price">
                                     69.00 PLN
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="single-item">
-                        <img src="assets/item/1.png" alt="">
-                        <div class="item_header">
-                            <h4>Bottle Humidifier</h4>
-                            <div class="price">
-                                <div class="hover">
-                                    <a href="#">
-                                        <a href="#">
-                                            <a href="#">
-                                                <i class="fas fa-shopping-cart"></i>Dodaj do koszyka</a>
-                                        </a>
-                                    </a>
-                                </div>
-                                <div class="normal">
+
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4">
+                        <div class="single-item">
+                            <img src="assets/item/1.png" alt="">
+                            <div class="item_header">
+                                <h4>Bottle Humidifier</h4>
+                                <div class="price">
                                     69.00 PLN
                                 </div>
                             </div>
                         </div>
                     </div>
+
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4">
+                        <div class="single-item">
+                            <img src="assets/item/1.png" alt="">
+                            <div class="item_header">
+                                <h4>Bottle Humidifier</h4>
+                                <div class="price">
+                                    69.00 PLN
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
                 </section>
             </div>
         </article>
@@ -315,8 +269,8 @@
                 <div class="container">
                     <div class="contact-form row">
                         <div class="col-xs-12 col-md-6">
-                                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FNewTekIlonaGrzeskowiak&tabs=timeline&width=500&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"  height="500" width="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
-                                </div>
+
+                        </div>
                         <div class="col-xs-12 col-md-6">
                             <h2>
                                 Masz jakieś pytania?
@@ -370,17 +324,6 @@
 <script src="js/rangeSlider.js"></script>
 <script src="js/menu.js"></script>
 <script src="js/custom.js"></script>
-<script>
-    $("#rangeSlider").ionRangeSlider({
-        type: "double",
-        grid: true,
-        min: 0,
-        max: 3000,
-        from: 200,
-        to: 800,
-        prefix: "zł "
-    });
-</script>
 <!-- Script END-->
 
 </html>
