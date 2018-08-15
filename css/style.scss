@@ -217,27 +217,44 @@ header {
     margin: 0;
 }
 
-.products .slide-bar {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 30px;
+.products 
+{
+    .slide-bar {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 30px;
+        min-width: 170px;
+        .filter
+        {
+            .filter_button
+            {
+                .fa-filter
+                {
+                    font-size: 80%;
+                }
+            }
+        }
+    }
 }
 
 .products {
     padding: 30px;
 }
 
-.products .article_footer a {
-    color: #000000;
-    text-decoration: underline;
-    font-size: 20px;
+.products
+{
+    .article_footer 
+    {
+        text-align: center;
+        padding: 20px;
+        a {
+            color: #000000;
+            text-decoration: underline;
+            font-size: 20px;
+        }
+    }
 }
-
-.products .article_footer {
-    text-align: center;
-    padding: 20px;
-}
-
 
 .category {
     ul {
@@ -294,9 +311,12 @@ header {
 
 /* Product section END */
 
-.contact .container {
-    display: flex;
-    flex-direction: column;
+.contact 
+{
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .contact {
@@ -304,10 +324,13 @@ header {
     padding: 10px;
 }
 
-.contact h1 {
-    font-size: 18px;
-    max-width: 500px;
-    width: 100%;
+.contact 
+{
+    h1 {
+        font-size: 18px;
+        max-width: 500px;
+        width: 100%;
+    }
 }
 
 .contact {
@@ -317,12 +340,18 @@ header {
     padding: 20px;
 }
 
-.contact .description {
-    text-align: center;
+.contact 
+{
+    .description {
+        text-align: center;
+    }
 }
 
-.wpcf7-form label {
-    width: 100%;
+.wpcf7-form 
+{
+    label {
+        width: 100%;
+    }
 }
 
 .wpcf7-email,
@@ -338,9 +367,12 @@ header {
     box-sizing: border-box;
 }
 
-.contact textarea {
-    min-height: 45px;
-    height: 180px;
+.contact 
+{
+    textarea {
+        min-height: 45px;
+        height: 180px;
+    }
 }
 
 .wpcf7-submit {
@@ -365,11 +397,14 @@ header {
     }
 }
 
-.contact .consent {
-    text-align: left;
-    font-weight: normal;
-    font-size: 13px;
-    margin: 5px 5px 20px 5px;
+.contact 
+{
+    .consent {
+        text-align: left;
+        font-weight: normal;
+        font-size: 13px;
+        margin: 5px 5px 20px 5px;
+    }
 }
 
 .footer_copyright {
@@ -429,19 +464,42 @@ header {
     .info {
         display: block;
     }
-    .products .container {
-        display: flex;
+    .products 
+    {
+        .container {
+            display: flex;
+        }
     }
-    .products .slide-bar {
-        flex-direction: column;
-        justify-content: flex-start;
-        width: 40%;
+    .products 
+    {
+        .slide-bar {
+            flex-direction: column;
+            justify-content: flex-start;
+            width: 40%;
+        }
     }
-    .products .slide-bar div {
-        padding: 10px;
+    .products 
+    {
+        .slide-bar 
+        {
+            div {
+                padding: 10px;
+                .filter-container
+                {
+                    display: block;
+                }
+                ul
+                {
+                    display: block;
+                }
+            }
+        }
     }
-    .products h3 {
-        font-size: 24px;
+    .products 
+    {
+        h3 {
+            font-size: 24px;
+        }
     }
     .contact-form {
         padding: 20px;
@@ -450,18 +508,30 @@ header {
         display: flex;
         justify-content: center;
     }
-    .contact h1 {
-        font-size: 32px;
-        padding: 20px;
+    .contact 
+    {
+        h1 {
+            font-size: 32px;
+            padding: 20px;
+        }
     }
-    .contact .container {
-        display: flex;
-        flex-direction: row;
+    .contact 
+    {
+        .container {
+            display: flex;
+            flex-direction: row;
+        }
     }
     
-    .item-wrapper .text h1 {
-        font-size: 30px;
-        color: #333333;
+    .item-wrapper 
+    {
+        .text
+        {
+            h1 {
+                font-size: 30px;
+                color: #333333;
+            }
+        }
     }
     .item-wrapper .text p a {
         font-size: 20px;
