@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="fonts/fonts.css">
     <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
 
+    <link rel="stylesheet" href="css/rangeslider/normalize.css">
+    <link rel="stylesheet" href="css/rangeslider/rangeSlider.css">
+    <link rel="stylesheet" href="css/rangeslider/rangeSlider.skinFlat.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -166,7 +169,7 @@
                             </h4>
                         </div>
                         <div class="info" id="filter_info">
-                            <input type="text" id="range_03" name="example_name" value="" />
+                            <input type="text" id="rangeSlider" name="rangeSlider" value="" />
                         </div>
                     </div>
                 </section>
@@ -366,15 +369,16 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="js/rangeSlider.js"></script>
 <script src="js/menu.js"></script>
+<script src="js/custom.js"></script>
 <script>
-    $("#range_03").ionRangeSlider({
+    $("#rangeSlider").ionRangeSlider({
         type: "double",
         grid: true,
         min: 0,
-        max: 1000,
+        max: 3000,
         from: 200,
         to: 800,
-        prefix: "$"
+        prefix: "zł "
     });
 </script>
 <!-- Script END-->
