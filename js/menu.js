@@ -26,7 +26,17 @@ $( document ).ready(function() {
         $(".filter-container").slideToggle();
 
       });
-            
+    
+      $(".single-color").click(function() {
+        var x = $(".single-color").length;
+        for (var i = 0; i <=x ; i++) { 
+            $( '#_'+ i).removeClass( 'select'); 
+            $( '#_'+ i).removeClass( 'fas fa-check'); 
+        }
+            $(this).addClass('select');
+            $(this).addClass('fas fa-check');               
+
+    });
 });
 
 

@@ -217,20 +217,16 @@ header {
     margin: 0;
 }
 
-.products 
-{
+.products {
     .slide-bar {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         padding-bottom: 30px;
         min-width: 170px;
-        .filter
-        {
-            .filter_button
-            {
-                .fa-filter
-                {
+        .filter {
+            .filter_button {
+                .fa-filter {
                     font-size: 80%;
                 }
             }
@@ -242,10 +238,8 @@ header {
     padding: 30px;
 }
 
-.products
-{
-    .article_footer 
-    {
+.products {
+    .article_footer {
         text-align: center;
         padding: 20px;
         a {
@@ -261,7 +255,7 @@ header {
         display: none;
         padding: 0px;
         list-style-type: none;
-        li {       
+        li {
             padding: 5px 0 5px 0;
             a {
                 color: #737373;
@@ -269,14 +263,51 @@ header {
         }
     }
 }
-.filter-container
-{
+
+.filter-container {
     display: none;
 }
+
 .contact-form {
     width: 100%;
 }
 
+.colors-container {
+    display: flex;
+    flex-wrap: wrap;
+    .single-color {
+        border-radius: 100%;
+        width: 30px;
+        height: 30px;
+        margin: 5px;
+        padding: 1px;
+        background-color: #c7c7c7;
+    }
+    .single-color.select {
+        border: 1px solid #f5f5f5;
+        padding: 0px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        color: #f5f5f5;
+    }
+    #_1 {
+        background-color: #c7c7c7;
+    }
+    #_2 {
+        background-color: #ffffff;
+    }
+    #_3 {
+        background-color: #ff8b8b;
+    }
+    #_4 {
+        background-color: #b2e6fe;
+    }
+    #_5 {
+        background-color: #beffc9;
+    }
+}
 
 .items {
     .single-item {
@@ -311,8 +342,7 @@ header {
 
 /* Product section END */
 
-.contact 
-{
+.contact {
     .container {
         display: flex;
         flex-direction: column;
@@ -324,8 +354,7 @@ header {
     padding: 10px;
 }
 
-.contact 
-{
+.contact {
     h1 {
         font-size: 18px;
         max-width: 500px;
@@ -340,15 +369,13 @@ header {
     padding: 20px;
 }
 
-.contact 
-{
+.contact {
     .description {
         text-align: center;
     }
 }
 
-.wpcf7-form 
-{
+.wpcf7-form {
     label {
         width: 100%;
     }
@@ -367,8 +394,7 @@ header {
     box-sizing: border-box;
 }
 
-.contact 
-{
+.contact {
     textarea {
         min-height: 45px;
         height: 180px;
@@ -397,8 +423,7 @@ header {
     }
 }
 
-.contact 
-{
+.contact {
     .consent {
         text-align: left;
         font-weight: normal;
@@ -464,39 +489,32 @@ header {
     .info {
         display: block;
     }
-    .products 
-    {
+    .products {
         .container {
             display: flex;
         }
     }
-    .products 
-    {
+    .products {
         .slide-bar {
             flex-direction: column;
             justify-content: flex-start;
-            width: 40%;
+            width: 90%;
         }
     }
-    .products 
-    {
-        .slide-bar 
-        {
+    .products {
+        .slide-bar {
             div {
                 padding: 10px;
-                .filter-container
-                {
+                .filter-container {
                     display: block;
                 }
-                ul
-                {
+                ul {
                     display: block;
                 }
             }
         }
     }
-    .products 
-    {
+    .products {
         h3 {
             font-size: 24px;
         }
@@ -508,25 +526,20 @@ header {
         display: flex;
         justify-content: center;
     }
-    .contact 
-    {
+    .contact {
         h1 {
             font-size: 32px;
             padding: 20px;
         }
     }
-    .contact 
-    {
+    .contact {
         .container {
             display: flex;
             flex-direction: row;
         }
     }
-    
-    .item-wrapper 
-    {
-        .text
-        {
+    .item-wrapper {
+        .text {
             h1 {
                 font-size: 30px;
                 color: #333333;
