@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="css/rangeslider/normalize.css">
     <link rel="stylesheet" href="css/rangeslider/rangeSlider.css">
     <link rel="stylesheet" href="css/rangeslider/rangeSlider.skinFlat.css">
+    <link rel="stylesheet" href="css/jquery.tabSlideOut.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -378,9 +379,28 @@
             </section>
         </footer>
     </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/jquery.tabSlideOut.js"></script>
+	
+    <div id="my-tab">
+        <span class="handle"><i class="fab fa-facebook-f"></i></span>
+        
+        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fpasjainformatykifanpage&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+
+    </div>
+
+<script>
+
+	$('#my-tab').tabSlideOut( {
+		tabLocation:'right',
+		action:'click',
+		offset:'200px'
+		} );
+	
+</script>
 </body>
 <!-- Script -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="js/rangeSlider.js"></script>
 <script src="js/menu.js"></script>
