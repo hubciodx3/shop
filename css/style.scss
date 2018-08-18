@@ -269,7 +269,6 @@ header {
         position: absolute;
         pointer-events: none;
         left: 5px;
-        text-align: center;
         top: 5px;
         letter-spacing: 1 px;
         transition: 0.2s ease all;
@@ -367,10 +366,10 @@ header {
         color: #f5f5f5;
     }
     #_1 {
-        background-color: #c7c7c7;
+        background-color: #727272;
     }
     #_2 {
-        background-color: #ffffff;
+        background-color: #f7f7f7;
     }
     #_3 {
         background-color: #ff8b8b;
@@ -381,6 +380,15 @@ header {
     #_5 {
         background-color: #beffc9;
     }
+    #_6 {
+        background-color:#ffea82; 
+    }
+    #_7 {
+        background-color:ffc984; 
+    }
+    #_8 {
+        background-color:#c792f4; 
+    }
 }
 
 .items {
@@ -389,7 +397,7 @@ header {
         position: relative;
         transition: all 0.4s;
         &:hover {
-            background: lighten(#000, 20%);
+            
         }
         .item_header {
             padding: 5px;
@@ -519,7 +527,7 @@ header {
     justify-content: center;
     float: right;
     list-style: none;
-    margin-right: 15px;
+    margin:20px 25px 20px 0px;
     li {
         padding: 4px;
         font-family: $secondary-font;
@@ -615,6 +623,11 @@ header {
                 padding: 10px;
                 .filter-container {
                     display: block;
+                    button
+                    {
+                        margin-top: 30px;
+                        float: right;
+                    }
                 }
                 ul {
                     display: block;

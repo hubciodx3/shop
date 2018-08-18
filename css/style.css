@@ -294,7 +294,6 @@ header {
   position: absolute;
   pointer-events: none;
   left: 5px;
-  text-align: center;
   top: 5px;
   letter-spacing: 1 px;
   -webkit-transition: 0.2s ease all;
@@ -413,11 +412,11 @@ header {
 }
 
 .colors-container #_1 {
-  background-color: #c7c7c7;
+  background-color: #727272;
 }
 
 .colors-container #_2 {
-  background-color: #ffffff;
+  background-color: #f7f7f7;
 }
 
 .colors-container #_3 {
@@ -432,6 +431,18 @@ header {
   background-color: #beffc9;
 }
 
+.colors-container #_6 {
+  background-color: #ffea82;
+}
+
+.colors-container #_7 {
+  background-color: ffc984;
+}
+
+.colors-container #_8 {
+  background-color: #c792f4;
+}
+
 .items {
   width: 100%;
 }
@@ -440,10 +451,6 @@ header {
   position: relative;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
-}
-
-.items .single-item:hover {
-  background: #333333;
 }
 
 .items .single-item .item_header {
@@ -579,7 +586,7 @@ header {
           justify-content: center;
   float: right;
   list-style: none;
-  margin-right: 15px;
+  margin: 20px 25px 20px 0px;
 }
 
 .pager-custom li {
@@ -680,6 +687,10 @@ header {
   }
   .products .slide-bar div .filter-container {
     display: block;
+  }
+  .products .slide-bar div .filter-container button {
+    margin-top: 30px;
+    float: right;
   }
   .products .slide-bar div ul {
     display: block;
