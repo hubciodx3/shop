@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Exo+2:300,400');
+$secondary-font:'Exo 2',
+sans-serif;
 $container-width:1200px;
 body {
     font-family: 'Maison Neue', sans-serif;
@@ -13,6 +16,10 @@ body {
     margin-right: auto;
 }
 
+article {
+    padding: 0px;
+}
+
 .button {
     a:hover {
         color: #ffffff;
@@ -20,10 +27,9 @@ body {
 }
 
 a {
-    color: #222222;
+    color: #3b3b3b;
     text-decoration: none;
     &:hover {
-        color: #222222;
         text-decoration: none !important;
     }
     &:active {
@@ -81,7 +87,7 @@ header {
             text-align: center;
             li {
                 a {
-                    color: #000000;
+                    color: #737373;
                     position: relative;
                     padding-bottom: 10px;
                     &,
@@ -98,14 +104,14 @@ header {
                         width: 0%;
                         content: '.';
                         color: transparent;
-                        background: #aaa;
+                        background: #000;
                         height: 1px;
                     }
                     &:hover:after {
                         width: 100%;
                     }
                     &:hover {
-                        color: #555;
+                        color: #000;
                     }
                 }
             }
@@ -212,18 +218,64 @@ header {
 
 /* Product section */
 
-.products h3 {
-    font-size: 16px;
-    margin: 0;
+.search {
+    margin: 30px 0px 10px 0px;
+    input {
+        font-size: 18px;
+        padding: 10px 10px 10px 5px;
+        display: block;
+        width: 300px;
+        border: none;
+        border-bottom: 1px solid #999;
+        &:focus {
+            outline: none;
+        }
+    }
+    input,label
+    {
+        width: 100%;
+    }
+    .group {
+        position: relative;
+        margin-bottom: 45px;
+        width: 80%;
+        margin: 0px auto;
+    }
+    label {
+        color: #999;
+        font-size: 18px;
+        font-weight: 300;
+        position: absolute;
+        pointer-events: none;
+        left: 5px;
+        text-align: center;
+        top: 5px;
+        letter-spacing: 1 px;
+        transition: 0.2s ease all;
+    }
+
+    input:focus~label,
+    input:valid~label {
+        top: -20px;
+        font-size: 16px;
+        color: #000;
+    }
 }
 
 .products {
+    display: flex;
+    h3 {
+        font-size: 16px;
+        margin: 0;
+    }
     .slide-bar {
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        justify-content: center;
+        .category,
+        .filter {
+            width: 50%;
+        }
         padding-bottom: 30px;
-        min-width: 170px;
         .filter {
             .filter_button {
                 .fa-filter {
@@ -232,10 +284,6 @@ header {
             }
         }
     }
-}
-
-.products {
-    padding: 30px;
 }
 
 .products {
@@ -256,9 +304,13 @@ header {
         padding: 0px;
         list-style-type: none;
         li {
-            padding: 5px 0 5px 0;
+            padding: 5px 0 5px 25px;
             a {
-                color: #737373;
+                color: #555;
+                transition: .4s;
+                &:hover {
+                    color: #000;
+                }
             }
         }
     }
@@ -310,20 +362,29 @@ header {
 }
 
 .items {
+    width: 100%;
     .single-item {
-        margin: 5px;
         position: relative;
         transition: all 0.4s;
+        &:hover {
+            background: lighten(#000, 20%);
+        }
         .item_header {
             padding: 5px;
             h4 {
-                margin-bottom: 5px;
+                margin-bottom: 0px;
+                font-size: 16px;
+                font-weight: bold;
             }
         }
         img {
             width: 100%;
         }
         .price {
+            font-family: $secondary-font;
+            color: #555;
+            font-weight: 300;
+            font-size: 14px;
             height: 20px;
         }
         .price-info,
@@ -351,7 +412,6 @@ header {
 
 .contact {
     background-color: #f5f5f5;
-    padding: 10px;
 }
 
 .contact {
@@ -432,6 +492,28 @@ header {
     }
 }
 
+.pager-custom {
+    display: flex;
+    justify-content: center;
+    float: right;
+    list-style: none;
+    margin-right: 15px;
+    li {
+        padding: 4px;
+        font-family: $secondary-font;
+        a {
+            font-size: 16px;
+            transition: .4;
+            font-weight: 300;
+            color: #737373;
+            &:hover {
+                cursor: pointer;
+                color: #000;
+            }
+        }
+    }
+}
+
 .footer_copyright {
     padding: 30px 20px 30px 20px;
     text-align: center;
@@ -480,7 +562,7 @@ header {
                         border-width: 0;
                     }
                     a {
-                        color: #000000;
+                        font-size: 15px;
                     }
                 }
             }
@@ -496,9 +578,13 @@ header {
     }
     .products {
         .slide-bar {
+            width: 20%;
             flex-direction: column;
             justify-content: flex-start;
-            width: 90%;
+            .category,
+            .filter {
+                width: 100%;
+            }
         }
     }
     .products {
@@ -520,7 +606,7 @@ header {
         }
     }
     .contact-form {
-        padding: 20px;
+        padding: 20px 0px 20px 0px;
     }
     .contact {
         display: flex;
@@ -556,6 +642,7 @@ header {
         float: right;
     }
     .items {
+        width: 80%;
         .single-item {
             .item_header {
                 position: absolute;
@@ -564,12 +651,19 @@ header {
             }
         }
     }
+    .pager-custom {
+        li {
+            a {
+                font-size: 18px;
+            }
+        }
+    }
 }
 
 @media (min-width: 1025px) {
     .items {
         .single-item {
-            margin: 10px;
+            margin-top: 15px;
             .item_header {
                 left: 10px;
                 bottom: 10px;
