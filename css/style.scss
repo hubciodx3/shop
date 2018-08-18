@@ -33,14 +33,11 @@ article {
         border-radius: 2px;
         box-sizing: border-box;
         transition: all 0.4s;
-        width: 100%;
-        max-width: 250px;
         &:hover {
             background: #000000;
             color: #ffffff;
             border: 1px solid #f5f5f5 !important;
-        }
-        
+        }       
 }
 
 .button {
@@ -262,7 +259,6 @@ header {
         position: relative;
         margin-bottom: 45px;
         width: 100%;
-        max-width: 500px;
         margin: 0px;
     }
     label {
@@ -394,11 +390,12 @@ header {
 .items {
     width: 100%;
     .single-item {
+        &:hover
+        {
+            cursor:  pointer;
+        }
         position: relative;
         transition: all 0.4s;
-        &:hover {
-            
-        }
         .item_header {
             padding: 5px;
             h4 {
@@ -417,12 +414,29 @@ header {
             font-size: 14px;
             height: 20px;
         }
-        .price-info,
-        .cart-shortcut {
-            height: 20px;
-            &:hover {
-                cursor: pointer;
+        .add_cart
+        {
+            position:absolute;
+            bottom: 15px;
+            right: 10px;
+            display: none;
+            &:hover i
+            {
+                font-size: 19px;
+                color: #000;
+
             }
+            i{
+                transition: 0.4s all;
+                color: #555;
+
+                font-size: 18px;
+            }
+            
+        }
+        &:hover .add_cart {
+            display: block;
+
         }
         .info h3 {
             font-size: 12px;
@@ -527,7 +541,7 @@ header {
     justify-content: center;
     float: right;
     list-style: none;
-    margin:20px 25px 20px 0px;
+    margin:20px 0;
     li {
         padding: 4px;
         font-family: $secondary-font;
@@ -551,7 +565,7 @@ header {
 
 /* DESKTOP STYLE*/
 
-@media (min-width: 720px) {
+@media (min-width: 769px) {
     header {
         background: #f5f5f5;
     }
@@ -613,8 +627,8 @@ header {
                     display: block;
                     button
                     {
+                        width: 100%;
                         margin-top: 30px;
-                        float: right;
                     }
                 }
                 ul {
@@ -675,6 +689,7 @@ header {
     .items {
         width: 80%;
         .single-item {
+            margin-top: 15px;
             .item_header {
                 position: absolute;
                 left: 15px;
@@ -689,6 +704,7 @@ header {
             }
         }
     }
+
 }
 
 @media (min-width: 1025px) {

@@ -33,8 +33,6 @@ article {
           box-sizing: border-box;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
-  width: 100%;
-  max-width: 250px;
 }
 
 .btn-newtek:hover {
@@ -286,7 +284,6 @@ header {
   position: relative;
   margin-bottom: 45px;
   width: 100%;
-  max-width: 500px;
   margin: 0px;
 }
 
@@ -455,6 +452,10 @@ header {
   transition: all 0.4s;
 }
 
+.items .single-item:hover {
+  cursor: pointer;
+}
+
 .items .single-item .item_header {
   padding: 5px;
 }
@@ -477,14 +478,27 @@ header {
   height: 20px;
 }
 
-.items .single-item .price-info,
-.items .single-item .cart-shortcut {
-  height: 20px;
+.items .single-item .add_cart {
+  position: absolute;
+  bottom: 15px;
+  right: 10px;
+  display: none;
 }
 
-.items .single-item .price-info:hover,
-.items .single-item .cart-shortcut:hover {
-  cursor: pointer;
+.items .single-item .add_cart:hover i {
+  font-size: 19px;
+  color: #000;
+}
+
+.items .single-item .add_cart i {
+  -webkit-transition: 0.4s all;
+  transition: 0.4s all;
+  color: #555;
+  font-size: 18px;
+}
+
+.items .single-item:hover .add_cart {
+  display: block;
 }
 
 .items .single-item .info h3 {
@@ -588,7 +602,7 @@ header {
           justify-content: center;
   float: right;
   list-style: none;
-  margin: 20px 25px 20px 0px;
+  margin: 20px 0;
 }
 
 .pager-custom li {
@@ -615,7 +629,7 @@ header {
 }
 
 /* DESKTOP STYLE*/
-@media (min-width: 720px) {
+@media (min-width: 769px) {
   header {
     background: #f5f5f5;
   }
@@ -682,8 +696,8 @@ header {
     display: block;
   }
   .products .slide-bar div .filter-container button {
+    width: 100%;
     margin-top: 30px;
-    float: right;
   }
   .products .slide-bar div ul {
     display: block;
@@ -739,6 +753,9 @@ header {
   }
   .items {
     width: 80%;
+  }
+  .items .single-item {
+    margin-top: 15px;
   }
   .items .single-item .item_header {
     position: absolute;
