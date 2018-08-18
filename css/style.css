@@ -33,6 +33,8 @@ article {
           box-sizing: border-box;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
+  width: 100%;
+  max-width: 250px;
 }
 
 .btn-newtek:hover {
@@ -283,8 +285,9 @@ header {
 .search .group {
   position: relative;
   margin-bottom: 45px;
-  width: 80%;
-  margin: 0px auto;
+  width: 100%;
+  max-width: 500px;
+  margin: 0px;
 }
 
 .search label {
@@ -325,12 +328,11 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding-bottom: 30px;
-}
-
-.products .slide-bar .category,
-.products .slide-bar .filter {
-  width: 50%;
 }
 
 .products .slide-bar .filter .filter_button .fa-filter {
@@ -663,13 +665,8 @@ header {
   .info {
     display: block;
   }
-  .products .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
   .products .slide-bar {
-    width: 20%;
+    width: 30%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -677,10 +674,6 @@ header {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-  }
-  .products .slide-bar .category,
-  .products .slide-bar .filter {
-    width: 100%;
   }
   .products .slide-bar div {
     padding: 10px;
@@ -694,6 +687,15 @@ header {
   }
   .products .slide-bar div ul {
     display: block;
+  }
+  .products .slide-bar .category,
+  .products .slide-bar .filter {
+    width: 100%;
+  }
+  .products .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .products h3 {
     font-size: 24px;
