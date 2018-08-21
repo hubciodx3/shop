@@ -1,4 +1,4 @@
-$("#rangeSlider").ionRangeSlider({
+jQuery("#rangeSlider").ionRangeSlider({
         type: "double",
         grid: false,
         min: 0,
