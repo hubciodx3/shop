@@ -119,29 +119,15 @@ add_action( 'widgets_init', 'shopthemplate_widgets_init' );
 /**
  * Enqueue scripts and styles.
  */
-function shopthemplate_scripts() {
-	wp_enqueue_style( 'shopthemplate-style', get_stylesheet_uri() );
-	wp_enqueue_script( 'shopthemplate-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
-	wp_enqueue_script( 'shopthemplate-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
-        wp_enqueue_script('jquery.tabSlideOut', get_stylesheet_directory_uri().'/js/jquery.tabSlideOut.js', array('jquery'), '1.0', 'screen, projection');
-    wp_enqueue_script('rangeSlider', get_stylesheet_directory_uri().'/js/rangeSlider.js', array('jquery'), '1.0', 'screen, projection');
-    wp_enqueue_script('custom', get_stylesheet_directory_uri().'/js/custom.js', array('jquery'), '1.0', 'screen, projection');
-    wp_enqueue_script('menu', get_stylesheet_directory_uri().'/js/menu.js', array('jquery'), '1.0', 'screen, projection');
-
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-		wp_enqueue_script( 'comment-reply' );
-	}
-}
-add_action( 'wp_enqueue_scripts', 'shopthemplate_scripts' );
-
 add_action( 'wp_enqueue_scripts', 'wpse_my_style' );
 function wpse_my_style(){
-  wp_enqueue_style( 'style', get_stylesheet_directory_uri() . '/css/style.css' );
-  wp_enqueue_style( 'tabSlideOut', get_stylesheet_directory_uri() . '/css/jquery.tabSlideOut.css' );
-  wp_enqueue_style( 'rangeSlider', get_stylesheet_directory_uri() . '/css/rangeslider/normalize.css' );
-  wp_enqueue_style( 'rangeSlider', get_stylesheet_directory_uri() . '/css/rangeslider/rangeSlider.css' );
-  wp_enqueue_style( 'rangeSliderSkinFlat', get_stylesheet_directory_uri() . '/css/rangeslider/rangeSlider.skinFlat.css' );
-
+  wp_enqueue_style( 'font-awesome', 'https://use.fontawesome.com/releases/v5.0.8/css/all.css' );
+  wp_enqueue_style( 'bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' );
+  wp_enqueue_style( 'tabSlideOut', get_template_directory_uri() . '/css/jquery.tabSlideOut.css' );
+  wp_enqueue_style( 'rangeSliderNormalize', get_template_directory_uri() . '/css/rangeslider/normalize.css' );
+  wp_enqueue_style( 'rangeSlider', get_template_directory_uri() . '/css/rangeslider/rangeSlider.css' );
+  wp_enqueue_style( 'rangeSliderSkinFlat', get_template_directory_uri() . '/css/rangeslider/rangeSlider.skinFlat.css' );
+  wp_enqueue_style( 'style', get_template_directory_uri() . '/css/style.css' );
 }    
 /**
  * Implement the Custom Header feature.
@@ -176,3 +162,4 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/woocommerce.php';
 }
+show_admin_bar(false);

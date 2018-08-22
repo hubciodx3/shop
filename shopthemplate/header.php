@@ -20,17 +20,6 @@
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
 	<?php wp_head(); ?>
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-    <link rel="stylesheet" href="fonts/fonts.css">
-    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/rangeslider/normalize.css">
-    <link rel="stylesheet" href="css/rangeslider/rangeSlider.css">
-    <link rel="stylesheet" href="css/rangeslider/rangeSlider.skinFlat.css">
-    <link rel="stylesheet" href="css/jquery.tabSlideOut.css">
-    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body <?php body_class(); ?>>
@@ -38,7 +27,9 @@
         <div class="page-header">
             <div class="page-logo">
                 <a href="index.html">
-			<?php the_custom_logo(); echo get_bloginfo( 'name', 'display' );?>
+                
+            <?php $custom_logo_id = get_theme_mod( 'custom_logo' );$image = wp_get_attachment_image_src( $custom_logo_id , 'full' );?>
+            <img src="<?php echo $image[0]; ?>" alt=""> <span><?php echo get_bloginfo( 'name', 'display' );?> </span>
                 </a>
             </div>
             <nav>

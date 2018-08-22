@@ -16,7 +16,6 @@
                 <div class="container">
                     <div class="contact-form row">
                         <div class="col-xs-12 col-md-6">
-
                         </div>
                         <div class="col-xs-12 col-md-6">
                             <h2>
@@ -63,16 +62,15 @@
                 Wszystkie prawa zastrzeżone &copy; 2018
             </section>
         </footer>
-    </main>
+        </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="js/jquery.tabSlideOut.js"></script>
+    <script src="<?php echo get_template_directory_uri();?>/js/jquery.tabSlideOut.js"></script>
 
     <div id="my-tab">
         <span class="handle">
             <i class="fab fa-facebook-f"></i>
         </span>
-        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fpasjainformatykifanpage&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=true&appId"
-            width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FNewTekIlonaGrzeskowiak%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
     </div>
 
     <script>
@@ -85,5 +83,12 @@
 
     </script>
 </body>
-<?php wp_footer(); ?>
+<!-- Script -->
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="<?php echo get_template_directory_uri();?>/js/rangeSlider.js"></script>
+<script src="<?php echo get_template_directory_uri();?>/js/menu.js"></script>
+<script src="<?php echo get_template_directory_uri();?>/js/custom.js"></script>
+<!-- Script END-->
+<?php wp_footer();?>
 </html>

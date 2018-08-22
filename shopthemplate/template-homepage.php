@@ -25,7 +25,7 @@ get_header(); ?>
                     <div class="item active">
                         <div class="item-wrapper">
                             <div class="image">
-                                <img src="assets/1.png" alt="">
+                                <img src="http://127.0.0.1/shop/wp-content/uploads/2018/08/1.png" alt="">
                             </div>
                             <div class="text">
                                 <h1>Niebieskie Poszycie</h1>
@@ -39,7 +39,7 @@ get_header(); ?>
                     <div class="item">
                         <div class="item-wrapper">
                             <div class="image">
-                                <img src="assets/1.png" alt="">
+                                <img src="http://127.0.0.1/shop/wp-content/uploads/2018/08/1.png" alt="">
                             </div>
                             <div class="text">
                                 <h1>Niebieskie Poszycie</h1>
@@ -53,7 +53,7 @@ get_header(); ?>
                     <div class="item">
                         <div class="item-wrapper">
                             <div class="image">
-                                <img src="assets/1.png" alt="">
+                                <img src="http://127.0.0.1/shop/wp-content/uploads/2018/08/1.png" alt="">
                             </div>
                             <div class="text">
                                 <h1>Niebieskie Poszycie</h1>
