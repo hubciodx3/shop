@@ -1,3 +1,62 @@
+/*!
+Theme Name: ShopThemplate
+Theme URI: http://underscores.me/
+Author: Kamil Bączek, Hubert Siast
+Author URI: https://github.com/hubciodx3/shop
+Description: Description
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: shopthemplate
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+ShopThemplate is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Typography
+# Elements
+# Forms
+# Navigation
+	## Links
+	## Menus
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Content
+	## Posts and pages
+	## Comments
+# Infinite scroll
+# Media
+	## Captions
+	## Galleries
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+
+/* normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+	 ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
 @import url('https://fonts.googleapis.com/css?family=Exo+2:300,400');
 $secondary-font:'Exo 2',
 sans-serif;
@@ -20,24 +79,24 @@ article {
     padding: 0px;
 }
 
-.btn-newtek{
-        margin: 0 5px;
-        background-color: #ffffff;
-        border: 1px solid #3b3b3b !important;
-        color: #3b3b3b;
-        border-radius: 2px;
-        font-weight: bold;
-        text-transform: uppercase;
-        padding: 10px 20px;
-        margin: 5px;
-        border-radius: 2px;
-        box-sizing: border-box;
-        transition: all 0.4s;
-        &:hover {
-            background: #000000;
-            color: #ffffff;
-            border: 1px solid #f5f5f5 !important;
-        }       
+.btn-newtek {
+    margin: 0 5px;
+    background-color: #ffffff;
+    border: 1px solid #3b3b3b !important;
+    color: #3b3b3b;
+    border-radius: 2px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 2px;
+    box-sizing: border-box;
+    transition: all 0.4s;
+    &:hover {
+        background: #000000;
+        color: #ffffff;
+        border: 1px solid #f5f5f5 !important;
+    }
 }
 
 .button {
@@ -54,6 +113,15 @@ a {
     }
     &:active {
         text-decoration: none;
+    }
+    &:visited
+    {
+        text-decoration: none;
+    }
+    &:focus
+    {
+        text-decoration: none;
+
     }
 }
 
@@ -251,8 +319,8 @@ header {
             outline: none;
         }
     }
-    input,label
-    {
+    input,
+    label {
         width: 100%;
     }
     .group {
@@ -272,7 +340,6 @@ header {
         letter-spacing: 1 px;
         transition: 0.2s ease all;
     }
-
     input:focus~label,
     input:valid~label {
         top: -20px;
@@ -377,22 +444,21 @@ header {
         background-color: #beffc9;
     }
     #_6 {
-        background-color:#ffea82; 
+        background-color: #ffea82;
     }
     #_7 {
-        background-color:ffc984; 
+        background-color: ffc984;
     }
     #_8 {
-        background-color:#c792f4; 
+        background-color: #c792f4;
     }
 }
 
 .items {
     width: 100%;
     .single-item {
-        &:hover
-        {
-            cursor:  pointer;
+        &:hover {
+            cursor: pointer;
         }
         position: relative;
         transition: all 0.4s;
@@ -414,29 +480,23 @@ header {
             font-size: 14px;
             height: 20px;
         }
-        .add_cart
-        {
-            position:absolute;
+        .add_cart {
+            position: absolute;
             bottom: 15px;
             right: 10px;
             display: none;
-            &:hover i
-            {
+            &:hover i {
                 font-size: 19px;
                 color: #000;
-
             }
-            i{
+            i {
                 transition: 0.4s all;
                 color: #555;
-
                 font-size: 18px;
             }
-            
         }
         &:hover .add_cart {
             display: block;
-
         }
         .info h3 {
             font-size: 12px;
@@ -541,20 +601,32 @@ header {
     justify-content: center;
     float: right;
     list-style: none;
-    margin:20px 0;
-    li {
-        padding: 4px;
-        font-family: $secondary-font;
-        a {
-            font-size: 16px;
-            transition: .4;
-            font-weight: 300;
-            color: #737373;
-            &:hover {
-                cursor: pointer;
-                color: #000;
-            }
+    margin: 20px 0;
+    padding: 4px;
+    font-family: $secondary-font;
+    a {
+        i
+        {
+           
         }
+        margin: 3px;
+        display: block;
+        font-size: 16px;
+        transition: .4;
+        font-weight: 300;
+        color: #737373;
+        &:hover {
+            cursor: pointer;
+        }
+        
+    }
+    span {
+        margin: 3px;
+        display: block;
+        font-size: 16px;
+        font-weight: 400;
+        color: #000;
+
     }
 }
 
@@ -615,7 +687,6 @@ header {
     .info {
         display: block;
     }
-
     .products {
         .slide-bar {
             width: 30%;
@@ -625,8 +696,7 @@ header {
                 padding: 10px;
                 .filter-container {
                     display: block;
-                    button
-                    {
+                    button {
                         width: 100%;
                         margin-top: 30px;
                     }
@@ -639,7 +709,6 @@ header {
             .filter {
                 width: 100%;
             }
-
         }
         .container {
             display: flex;
@@ -698,13 +767,11 @@ header {
         }
     }
     .pager-custom {
-        li {
-            a {
-                font-size: 18px;
-            }
+        span,
+        a {
+            font-size: 18px;
         }
     }
-
 }
 
 @media (min-width: 1025px) {

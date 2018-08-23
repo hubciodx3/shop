@@ -22,27 +22,12 @@ get_header(); ?>
                             <i class="fas fa-caret-down"></i>
                         </h4>
                         <ul>
-                            <li>
-                                <a href="#">Wszystko</a>
-                            </li>
-                            <li>
-                                <a href="#">Bawełny</a>
-                            </li>
-                            <li>
-                                <a href="#">Pokrowce</a>
-                            </li>
-                            <li>
-                                <a href="#">Koszulki</a>
-                            </li>
-                            <li>
-                                <a href="#">Buty</a>
-                            </li>
-                            <li>
-                                <a href="#">Skarpetki</a>
-                            </li>
-                            <li>
-                                <a href="#">Czapki</a>
-                            </li>
+                            <?php
+                            $categories = get_categories();
+                            foreach($categories as $category) {
+                               echo '<li><a href="' . get_category_link($category->term_id) . '">' . $category->name . '</a></li>';
+                            }
+                            ?>
                         </ul>
                     </div>
                     <div class="filter">
@@ -84,9 +69,12 @@ get_header(); ?>
                     </div>
                     
                     <?php  
+                    $paged = ( get_query_var( 'paged' ) ) ? absint( get_query_var( 'paged' ) ) : 1;
+
     $args = array(
         'post_type'      => 'product',
-        'posts_per_page' => 10,
+        'posts_per_page' => 3,
+        'paged' => $paged
      
     );
 
@@ -109,7 +97,6 @@ get_header(); ?>
         </div>
     </div>';
     endwhile;
-
     wp_reset_query();
 ?>
                    
@@ -117,28 +104,21 @@ get_header(); ?>
             </div>
         </article>
         <div class="container">
-            <ul class="pager-custom">
-                <li>
-                    <a href="#">
-                        <i class="fa fa-chevron-left"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">01</a>
-                </li>
-                <li>
-                    <a href="#">02</a>
-                </li>
-                <li>
-                    <a href="#">03</a>
-                </li>
-                <li>
-                    <a href="#">04</a>
-                </li>
-                <li>
-                    <a href="#">05</a>
-                </li>
-            </ul>
+            <div class='pager-custom'>
+        <?php
+$big = 999999999; 
+
+echo paginate_links( array(
+	'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
+	'format' => '?paged=%#%',
+	'current' => max( 1, get_query_var('paged') ),
+    'total' => $loop->max_num_pages,
+    'next_text' => "<i class='fa fa-chevron-right'></i>",
+    'prev_text' => "<i class='fa fa-chevron-left'></i>"
+) );
+?>
+</div>
+   
         </div>
 
 <?php
