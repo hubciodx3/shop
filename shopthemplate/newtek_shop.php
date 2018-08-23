@@ -85,7 +85,7 @@ get_header(); ?>
         echo ' <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4">
         <div class="single-item">
         <a href="'.get_permalink().'"><img src="'.get_the_post_thumbnail_url().'" alt=""></a>
-            <a href="#" class="add_cart">
+            <a href="'.get_site_url().'/?add-to-cart='.get_the_ID().'" class="add_cart">
                 <i class="fas fa-shopping-cart"></i>
             </a>
             <div class="item_header">
