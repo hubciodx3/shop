@@ -20,4 +20,4 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 ?>
-<section class="item row columns-<?php echo esc_attr( wc_get_loop_prop( 'columns' ) ); ?>">
+<section class="items">

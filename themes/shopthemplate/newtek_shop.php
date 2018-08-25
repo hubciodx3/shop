@@ -23,8 +23,8 @@ get_header(); ?>
                         </h4>
                         <ul>
                             <?php
-                            $categories = get_categories();
-                            foreach($categories as $category) {
+                          $product_categories = get_terms( 'product_cat');
+                            foreach($product_categories as $category) {
                                echo '<li><a href="' . get_category_link($category->term_id) . '">' . $category->name . '</a></li>';
                             }
                             ?>

@@ -23,7 +23,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-    <header>
+    <header class="header-container">
         <div class="page-header">
             <div class="page-logo">
                 <a href="index.html">
@@ -47,7 +47,7 @@
             </nav>
             <div class="cart">
                 <i class="fas fa-shopping-cart"></i>
-                <div class="var">0</div>
+                <div class="var"> <?php echo WC()->cart->get_cart_contents_count(); ?></div>
             </div>
         </div>
     </header>
