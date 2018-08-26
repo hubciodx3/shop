@@ -123,13 +123,21 @@ add_action( 'wp_enqueue_scripts', 'wpse_my_style' );
 function wpse_my_style(){
   wp_enqueue_style( 'font-awesome', 'https://use.fontawesome.com/releases/v5.0.8/css/all.css' );
   wp_enqueue_style( 'bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' );
-  wp_enqueue_style( 'animate', get_template_directory_uri() .'/css/animate.css' );
+  wp_enqueue_style( 'animate', '/css/animate.css' );
   wp_enqueue_style( 'tabSlideOut', get_template_directory_uri() . '/css/jquery.tabSlideOut.css' );
   wp_enqueue_style( 'rangeSliderNormalize', get_template_directory_uri() . '/css/rangeslider/normalize.css' );
   wp_enqueue_style( 'rangeSlider', get_template_directory_uri() . '/css/rangeslider/rangeSlider.css' );
   wp_enqueue_style( 'rangeSliderSkinFlat', get_template_directory_uri() . '/css/rangeslider/rangeSlider.skinFlat.css' );
   wp_enqueue_style( 'style', get_template_directory_uri() . '/css/style.css' );
-}    
+}  
+
+add_filter( 'loop_shop_per_page', 'new_loop_shop_per_page', 20 );
+
+function new_loop_shop_per_page( $cols ) {
+
+  $cols = 9;
+  return $cols;
+}
 /**
  * Implement the Custom Header feature.
  */

@@ -126,7 +126,7 @@ if ( ! function_exists( 'shopthemplate_woocommerce_product_columns_wrapper' ) ) 
 	 */
 	function shopthemplate_woocommerce_product_columns_wrapper() {
 		$columns = shopthemplate_woocommerce_loop_columns();
-		echo '<div class="container">';
+		echo '<div class="container-products">';
 	}
 }
 add_action( 'woocommerce_before_shop_loop', 'shopthemplate_woocommerce_product_columns_wrapper', 40 );

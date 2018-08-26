@@ -18,12 +18,12 @@ $( document ).ready(function() {
         }
       });
     
-      $(".category_button").click(function(){
-        $(".category ul").slideToggle();
+      $(".widget_product_categories ").click(function(){
+        $(".widget_product_categories ul").slideToggle();
       });
 
-      $(".filter_button").click(function(){
-        $(".filter-container").slideToggle();
+      $(".widget_price_filter h2").click(function(){
+        $(".widget_price_filter form").slideToggle();
 
       });
     

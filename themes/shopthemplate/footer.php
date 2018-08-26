@@ -10,7 +10,7 @@
  */
 
 ?>
-
+  </div>
         <footer class="main">
             <section class="contact">
                 <div class="container">
