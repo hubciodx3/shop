@@ -402,17 +402,26 @@ p.stars.selected a:not(.active):before {
 	margin: 0;
 	padding: 0;
 	text-align: left;
+	background-color: #f5f5f5;
+	padding: 10px;
+	border-radius: 5px;
 }
 
 .woocommerce-tabs ul.tabs li {
 	display: block;
 	margin: 0;
 	position: relative;
-}
 
+}
+.woocommerce-tabs ul.tabs li.active
+{
+	background-color: #ffffff;
+	border-radius: 5px;
+}
 .woocommerce-tabs ul.tabs li a {
 	padding: 1em 0;
 	display: block;
+	padding: 10px;
 }
 
 .woocommerce-tabs .panel h2:first-of-type {
@@ -575,4 +584,10 @@ p.no-comments {
 
 .widget_price_filter .ui-slider-horizontal .ui-slider-range {
 	height: 100%;
+}
+@media (min-width: 769px) {
+    .woocommerce-tabs ul.tabs li
+    {
+        display: inline-block;
+	}
 }

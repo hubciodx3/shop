@@ -28,7 +28,7 @@ if ( $total <= 1 ) {
 	return;
 }
 ?>
-<div class="pager-custom">
+<nav class="woocommerce-pagination">
 	<?php
 		echo paginate_links( apply_filters( 'woocommerce_pagination_args', array( // WPCS: XSS ok.
 			'base'         => $base,
@@ -43,4 +43,4 @@ if ( $total <= 1 ) {
 			'mid_size'     => 3,
 		) ) );
 	?>
-</div>
+</nav>

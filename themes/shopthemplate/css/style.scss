@@ -62,6 +62,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 $secondary-font:'Exo 2',
 sans-serif;
 $container-width:1200px;
+$font-color:#333333;
 body {
     font-family: 'Maison Neue', sans-serif;
     background-color: #ffffff;
@@ -75,7 +76,11 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
-
+.flex {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 article {
     padding: 0px;
 }
@@ -156,18 +161,14 @@ article {
                     top: 10px;
                     font-size: 20px;
                     display: none;
-                }
-                &:hover .price
-                {
-                }
-      
+                }    
             }
             
         }
     }
 }
 
-.btn-newtek {
+.btn-newtek, .single_add_to_cart_button, .value select, .qty{
     margin: 0 5px;
     background-color: #ffffff;
     border: 1px solid #3b3b3b !important;
@@ -177,7 +178,18 @@ article {
     text-transform: uppercase;
     padding: 10px 20px;
     margin: 5px;
+    margin-left: 0px;
+    margin-right: 0px;
     border-radius: 2px;
+    width: 100%;
+}
+.woocommerce-product-gallery__trigger
+{
+    display: none!important;
+
+}
+.btn-newtek 
+{
     box-sizing: border-box;
     transition: all 0.4s;
     &:hover {
@@ -186,7 +198,6 @@ article {
         border: 1px solid #f5f5f5 !important;
     }
 }
-
 .button {
     a:hover {
         color: #ffffff;
@@ -229,7 +240,7 @@ a {
     padding: 0;
     margin: 0;
     border: 0;
-    background-color: #ffffff;
+    background-color: #f5f5f5;
     z-index: 1000;
     color: #000000;
     .page-logo {
@@ -662,6 +673,26 @@ a {
     padding: 30px 20px 30px 20px;
     text-align: center;
 }
+/* Single product css */
+.product
+{
+    width: 100%;
+}
+.wp-post-image
+{
+    width: 100%;
+    height: auto;
+}
+.label label
+{
+    color: $font-color;
+}
+#main
+{
+    padding: 10px 15px 0 15px;
+}
+/* Single product css END*/
+
 
 /* DESKTOP STYLE*/
 
@@ -669,13 +700,17 @@ a {
     .header-container {
         background: #f5f5f5;
     }
+    .flex {
+        flex-direction: row;
+        justify-content: space-between;
+    }
     .page-header {
         margin: auto;
         left: 0;
         right: 0;
         border-bottom: none;
         max-width: $container-width;
-        background: #f5f5f5;
+        background-color: #f5f5f5;
         .page-logo {
             a {
                 justify-content: flex-start;
