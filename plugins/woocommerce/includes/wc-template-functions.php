@@ -1408,8 +1408,14 @@ function wc_get_gallery_image_html( $attachment_id, $main_image = false ) {
 		'data-large_image_height' => $full_src[2],
 		'class'                   => $main_image ? 'wp-post-image' : '',
 	) );
-
-	return '<div data-thumb="' . esc_url( $thumbnail_src[0] ) . '" class="woocommerce-product-gallery__image"><a href="' . esc_url( $full_src[0] ) . '">' . $image . '</a></div>';
+	if($main_image == true)
+	{
+		return '<div class="item active"><img src="' . esc_url( $full_src[0] ) . '" alt=""></div>';
+	}else
+	{
+		return '<div class="item"><img src="' . esc_url( $full_src[0] ) . '" alt=""></div>';
+	}
+	
 }
 
 if ( ! function_exists( 'woocommerce_output_product_data_tabs' ) ) {

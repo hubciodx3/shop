@@ -46,8 +46,10 @@
                 </button>
             </nav>
             <div class="cart">
-                <i class="fas fa-shopping-cart"></i>
-                <div class="var"> <?php echo WC()->cart->get_cart_contents_count(); ?></div>
+                <a href="<?php echo get_home_url().'/cart/'?>">
+                    <i class="fas fa-shopping-cart"></i>
+                    <div class="var"> <?php echo WC()->cart->get_cart_contents_count(); ?></div>
+                </a>
             </div>
         </div>
     </header>
