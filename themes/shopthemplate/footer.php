@@ -15,9 +15,8 @@
             <section class="contact">
                 <div class="container">
                     <div class="contact-form row">
-                        <div class="col-xs-12 col-md-6">
-                        <?php do_shortcode("[fb_widget fb_url=”https://www.facebook.com/NewTekIlonaGrzeskowiak/” width=”500″ height=”450″ data_small_header=”false” select_lng=”ru_RU” data_adapt_container_width=”false” data_hide_cover=”false” data_show_facepile=”false” data_show_posts=”true”]");?>
-                        </div>
+                        <div class="col-xs-12 col-md-6 facebook-container">
+                        <iframe class='facebook-page' src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fweb.facebook.com%2FNewTekIlonaGrzeskowiak%2F%3F_rdc%3D1%26_rdr&tabs&width=340&height=180&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="180" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>                        </div>
                         <div class="col-xs-12 col-md-6">
                             <h2>
                                 Masz jakieś pytania?

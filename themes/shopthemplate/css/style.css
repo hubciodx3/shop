@@ -56,9 +56,17 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 body {
   font-family: 'Maison Neue', sans-serif;
   background-color: #ffffff;
-  margin: 0;
+  margin: 0 !important;
   border: 0;
   padding: 0;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 18px;
 }
 
 .container {
@@ -92,11 +100,16 @@ article {
   -webkit-box-direction: reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
+  margin-bottom: 10px;
 }
 
 h2.widget-title {
-  font-size: 18px;
+  font-size: 16px;
   text-transform: uppercase;
+}
+
+.woocommerce-info {
+  background: transparent !important;
 }
 
 #primary,
@@ -146,8 +159,11 @@ h2.widget-title {
   display: none !important;
 }
 
+.woocommerce-result-count {
+  display: none;
+}
+
 .items {
-  margin-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -268,6 +284,12 @@ h2.widget-title {
 .btn-newtek:hover, .single_add_to_cart_button:hover, button:hover, .button:hover {
   background: #000000;
   color: #ffffff  !important;
+  border: 1px solid #f5f5f5 !important;
+}
+
+.hamburger:hover {
+  background: transparent;
+  color: #3b3b3b !important;
   border: 1px solid #f5f5f5 !important;
 }
 
@@ -440,16 +462,19 @@ a:focus {
 
 .page-header nav .hamburger {
   position: absolute;
-  top: 30px;
+  top: 28px;
   left: 25px;
   border: 0;
   background-color: rgba(0, 0, 0, 0);
   font-size: 20px;
+  border: 0px !important;
+  padding: 0px !important;
+  margin: 0;
 }
 
 .page-header .cart {
   position: absolute;
-  top: 30px;
+  top: 26px;
   right: 25px;
 }
 
@@ -502,6 +527,40 @@ a:focus {
 
 /* Slider END */
 /* Product section */
+.woocommerce-product-search {
+  max-width: 100%;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.woocommerce-product-search label {
+  display: none;
+}
+
+.woocommerce-product-search input {
+  border-right: 0px !important;
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+}
+
+.woocommerce-product-search button {
+  width: 20%;
+  border-left: 0px !important;
+  border-top-left-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+  background: #f0f0f0;
+}
+
+.woocommerce-product-search button:hover {
+  background: #000000;
+}
+
+.woocommerce-product-search input[type="hidden"] {
+  display: none;
+}
+
 .search {
   margin: 30px 0px 10px 0px;
 }
@@ -726,12 +785,23 @@ a:focus {
   text-align: center;
 }
 
+.woocommerce-ordering {
+  margin: 0px;
+}
+
 .wpcf7-form {
   background: transparent;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
 .wpcf7-form label {
   width: 100%;
+}
+
+p.cart-empty {
+  margin-bottom: 25px;
 }
 
 .wpcf7-email,
@@ -751,6 +821,26 @@ a:focus {
 .contact textarea {
   min-height: 45px;
   height: 180px;
+}
+
+.facebook-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+
+.facebook-container .facebook-page {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 .wpcf7-submit {
@@ -774,7 +864,7 @@ a:focus {
 
 .wpcf7-submit:hover {
   background: #000000;
-  color: #ffffff;
+  color: #ffffff !important;
   border: 1px solid #f5f5f5 !important;
 }
 
@@ -785,7 +875,11 @@ a:focus {
   margin: 5px 5px 20px 5px;
 }
 
-.page-numbers {
+.woocommerce-pagination {
+  width: 100%;
+}
+
+.woocommerce-pagination .page-numbers {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -799,7 +893,7 @@ a:focus {
   font-family: "Exo 2", sans-serif;
 }
 
-.page-numbers a {
+.woocommerce-pagination .page-numbers a {
   margin: 3px;
   display: block;
   font-size: 16px;
@@ -809,11 +903,11 @@ a:focus {
   color: #737373;
 }
 
-.page-numbers a:hover {
+.woocommerce-pagination .page-numbers a:hover {
   cursor: pointer;
 }
 
-.page-numbers span {
+.woocommerce-pagination .page-numbers span {
   margin: 3px;
   display: block;
   font-size: 16px;
@@ -967,6 +1061,12 @@ a:focus {
         -ms-flex-direction: row;
             flex-direction: row;
   }
+  .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
   .item-wrapper .text h1 {
     font-size: 30px;
     color: #333333;
@@ -984,26 +1084,15 @@ a:focus {
   .page-numbers a {
     font-size: 18px;
   }
-<<<<<<< HEAD
   .orderby {
     width: auto;
     margin-bottom: 15px;
-=======
+  }
   #primary {
-    width: 80%;
+    width: 85%;
   }
   #secondary {
-    width: 20%;
-  }
-  .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
->>>>>>> dodanie filtrowania,pager,sidebar
+    width: 15%;
   }
 }
 
