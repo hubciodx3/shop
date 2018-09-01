@@ -227,18 +227,40 @@ th, td {
   padding: 0px 5px;
 }
 
-table {
-  border: 1px solid #3b3b3b;
+form {
+  background: #fefefe;
+  border-radius: 5px;
+  margin: 20px;
+  padding: 10px;
+  max-width: 800px;
+  margin-right: auto;
 }
 
-table th, table td {
+form label {
+  width: 100%;
+}
+
+form input {
+  width: 100%;
+}
+
+form textarea {
+  min-height: 300px;
+  width: 100%;
+}
+
+.checkout {
+  background: #fefefe;
+  border-radius: 5px;
+  margin: 20px;
   padding: 10px;
-  border: 1px solid #3b3b3b;
 }
 
 .woocommerce-cart-form {
   background: #fefefe;
   border-radius: 5px;
+  margin: 20px;
+  padding: 10px;
 }
 
 .woocommerce-cart-form table {
@@ -646,6 +668,10 @@ a:focus {
 
 .contact .description {
   text-align: center;
+}
+
+.wpcf7-form {
+  background: transparent;
 }
 
 .wpcf7-form label {

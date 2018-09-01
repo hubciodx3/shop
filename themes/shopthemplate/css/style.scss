@@ -215,19 +215,39 @@ th,td
 {
     padding: 0px 5px;
 }
-table
-{
-    border: 1px solid #3b3b3b;
-    th,td{
-        padding: 10px;
-        border: 1px solid #3b3b3b;
-
+form{
+    background: #fefefe;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 10px;
+    label{
+        width: 100%;
     }
+    input{
+        width: 100%;
+    }
+    textarea{
+        min-height: 300px;
+        width: 100%;
+    }
+    max-width: 800px;
+    margin-right:auto;
+
+}
+.checkout
+{ 
+    background: #fefefe;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 10px;
+   
 }
 .woocommerce-cart-form
 {   
     background: #fefefe;
     border-radius: 5px;
+    margin: 20px;
+    padding: 10px;
     table{
         border:0px;
     }
@@ -584,6 +604,7 @@ a {
 }
 
 .wpcf7-form {
+    background: transparent;
     label {
         width: 100%;
     }
