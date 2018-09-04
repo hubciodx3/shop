@@ -15,8 +15,18 @@
             <section class="contact">
                 <div class="container">
                     <div class="contact-form row">
-                        <div class="col-xs-12 col-md-6 facebook-container">
-                        <iframe class='facebook-page' src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fweb.facebook.com%2FNewTekIlonaGrzeskowiak%2F%3F_rdc%3D1%26_rdr&tabs&width=340&height=180&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="180" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>                        </div>
+                        <div class="col-xs-12 col-md-6">
+                        <div class="about_us">
+                            <h2>O nas</h2>
+                            <?php the_field("about_us", 57) ?>
+                        </div>
+                            <div class="standard_contact">
+                                <h4>Dane kontaktowe</h4>
+                                <p><?php the_field("first_line", 57) ?></p>
+                                <p><?php the_field("second_line", 57) ?></p>
+                                <p><?php the_field("third_line", 57) ?></p>
+                            </div>
+                        </div>
                         <div class="col-xs-12 col-md-6">
                             <h2>
                                 Masz jakieś pytania?

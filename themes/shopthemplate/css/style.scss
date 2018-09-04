@@ -78,6 +78,7 @@ h2
 {
     font-size: 18px;
 }
+
 .container {
     max-width: $container-width;
     margin-left: auto;
@@ -124,7 +125,6 @@ h2.widget-title {
 .widget_price_filter
 {
     form{
-    display: none;
     }
 }
 .price_slider_amount {
@@ -152,17 +152,18 @@ h2.widget-title {
 }
 .woocommerce-product-gallery__wrapper .woocommerce-product-gallery__image
 {
-    display: none!important;
+    display: none !important;
 }
 .woocommerce-result-count
 {
-    display: none;
+    margin-top: 20px;
+    margin-left: 25px;
 }
 .items {
     display: flex;
     flex-wrap: wrap;
     .single-product-container {
-        width: 50%;     
+        width:100%;     
         .single-product {
             $border-color: #d1d1d1;
             border: 1px solid $border-color;
@@ -229,7 +230,7 @@ h2.widget-title {
 .btn-newtek, .button, .single_add_to_cart_button, .value select, .qty, .orderby, input, button, textarea, textarea{
     margin: 0 5px;
     background-color: #ffffff;
-    border: 1px solid #3b3b3b !important;
+    border: 1px solid rgb(204, 204, 204) !important;
     color: #3b3b3b!important;
     border-radius: 2px;
     padding: 10px 20px;
@@ -343,6 +344,13 @@ a {
     margin: 3px;
 }
 
+
+.orderby
+{
+   
+    margin-left: 10px;
+  margin-bottom: 0px;
+}
 /* Header */
 
 .header-container {
@@ -486,7 +494,8 @@ a {
 
 .woocommerce-product-search
 {   max-width: 100%;
-    margin:0;
+    margin:0 20px 0 20px;
+    padding: 0;
     label
     {
         display: none;
@@ -499,7 +508,6 @@ a {
     }
     button
     {
-        width: 20%;
         border-left: 0px!important;
         border-top-left-radius: 0px!important;
         border-bottom-left-radius: 0px!important;
@@ -704,7 +712,7 @@ a {
 
 .woocommerce-ordering
 {
-    margin: 0px;
+    margin: 0 20px 0 0;
 }
 
 .wpcf7-form {
@@ -815,6 +823,10 @@ p.cart-empty
         }
     }
 }
+.standard_contact
+{
+    padding-top: 30px;
+}
 .footer_copyright {
     padding: 30px 20px 30px 20px;
     text-align: center;
@@ -843,6 +855,14 @@ p.cart-empty
 /* DESKTOP STYLE*/
 
 @media (min-width: 769px) {
+    .product-categories
+    {
+        display:block;
+    }
+    .widget 
+    {
+        min-width: 200px;
+    }
     .woocommerce-product-gallery
     {
         max-width: 500px;
@@ -977,24 +997,40 @@ p.cart-empty
             font-size: 18px;
         }
     }
-    .orderby
-    {
-        width: auto;
-        margin-bottom: 15px;
-    }
     #primary{
-        width: 85%;
+        width: 100%;
 
     }
     #secondary{
         width: 15%;
     }
+    .orders-container
+    {
+        display: flex;
+        .orders{
+        width: 100%;
+        }
+    }
+    
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1023px) {
+    .orderby
+    {
+        width: auto;
+        float: right;
+        margin-right: 10px !important;
+    }
+    .woocommerce-ordering
+    {
+        margin: 0;
+    }
+    .orders{
+        width: 50%;
+        }
     .items {
         .single-product-container {
-            width: 33%;
+            width: 33.33%;
         }
     }
 }

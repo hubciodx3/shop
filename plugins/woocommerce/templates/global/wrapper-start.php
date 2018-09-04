@@ -45,6 +45,14 @@ switch ( $template ) {
 		echo '<div id="primary" class="content-area twentysixteen"><main id="main" class="site-main" role="main">';
 		break;
 	default :
-		echo '<div class="container"><div id="primary" class="content-area"><main id="main" class="site-main" role="main">';
+		echo '<div class="container">';
+		if(is_front_page())
+		{
+			echo "<div id='primary' class='content-area' style='width: 85%;'>";
+		}else 
+		{
+			echo "<div id='primary' class='content-area'>";
+		}
+		echo '<main id="main" class="site-main" role="main">';
 		break;
 }

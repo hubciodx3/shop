@@ -260,3 +260,4 @@ function search_widgets_init() {
 
 }
 add_action( 'widgets_init', 'search_widgets_init' );
+

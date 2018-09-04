@@ -126,10 +126,6 @@ h2.widget-title {
   width: 100%;
 }
 
-.widget_price_filter form {
-  display: none;
-}
-
 .price_slider_amount .button {
   margin: 0 5px;
   background-color: #ffffff;
@@ -160,7 +156,8 @@ h2.widget-title {
 }
 
 .woocommerce-result-count {
-  display: none;
+  margin-top: 20px;
+  margin-left: 25px;
 }
 
 .items {
@@ -172,7 +169,7 @@ h2.widget-title {
 }
 
 .items .single-product-container {
-  width: 50%;
+  width: 100%;
 }
 
 .items .single-product-container .single-product {
@@ -253,7 +250,7 @@ h2.widget-title {
 .btn-newtek, .button, .single_add_to_cart_button, .value select, .qty, .orderby, input, button, textarea, textarea {
   margin: 0 5px;
   background-color: #ffffff;
-  border: 1px solid #3b3b3b !important;
+  border: 1px solid #cccccc !important;
   color: #3b3b3b !important;
   border-radius: 2px;
   padding: 10px 20px;
@@ -372,6 +369,11 @@ a:focus {
 
 .fas {
   margin: 3px;
+}
+
+.orderby {
+  margin-left: 10px;
+  margin-bottom: 0px;
 }
 
 /* Header */
@@ -529,7 +531,8 @@ a:focus {
 /* Product section */
 .woocommerce-product-search {
   max-width: 100%;
-  margin: 0;
+  margin: 0 20px 0 20px;
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -546,7 +549,6 @@ a:focus {
 }
 
 .woocommerce-product-search button {
-  width: 20%;
   border-left: 0px !important;
   border-top-left-radius: 0px !important;
   border-bottom-left-radius: 0px !important;
@@ -786,7 +788,7 @@ a:focus {
 }
 
 .woocommerce-ordering {
-  margin: 0px;
+  margin: 0 20px 0 0;
 }
 
 .wpcf7-form {
@@ -915,6 +917,10 @@ p.cart-empty {
   color: #000;
 }
 
+.standard_contact {
+  padding-top: 30px;
+}
+
 .footer_copyright {
   padding: 30px 20px 30px 20px;
   text-align: center;
@@ -941,6 +947,12 @@ p.cart-empty {
 /* Single product css END*/
 /* DESKTOP STYLE*/
 @media (min-width: 769px) {
+  .product-categories {
+    display: block;
+  }
+  .widget {
+    min-width: 200px;
+  }
   .woocommerce-product-gallery {
     max-width: 500px;
   }
@@ -1084,21 +1096,36 @@ p.cart-empty {
   .page-numbers a {
     font-size: 18px;
   }
-  .orderby {
-    width: auto;
-    margin-bottom: 15px;
-  }
   #primary {
-    width: 85%;
+    width: 100%;
   }
   #secondary {
     width: 15%;
   }
+  .orders-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .orders-container .orders {
+    width: 100%;
+  }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1023px) {
+  .orderby {
+    width: auto;
+    float: right;
+    margin-right: 10px !important;
+  }
+  .woocommerce-ordering {
+    margin: 0;
+  }
+  .orders {
+    width: 50%;
+  }
   .items .single-product-container {
-    width: 33%;
+    width: 33.33%;
   }
 }
 

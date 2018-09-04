@@ -1,0 +1,76 @@
+2018-09-04T20:11:37+00:00 CRITICAL Maximum execution time of 30 seconds exceeded
+
+2018-09-04T20:18:09+00:00 CRITICAL Maximum execution time of 30 seconds exceeded
+
+2018-09-04T20:25:35+00:00 CRITICAL Uncaught Error: Call to undefined function woo_product_slider_id() in C:\xampp\htdocs\shop\wp-content\plugins\woocommerce\templates\loop\orderby.php:22
+Stack trace:
+#0 C:\xampp\htdocs\shop\wp-content\plugins\woocommerce\includes\wc-core-functions.php(210): include()
+#1 C:\xampp\htdocs\shop\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1330): wc_get_template('loop/orderby.ph...', Array)
+#2 C:\xampp\htdocs\shop\wp-includes\class-wp-hook.php(286): woocommerce_catalog_ordering('')
+#3 C:\xampp\htdocs\shop\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#4 C:\xampp\htdocs\shop\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\shop\wp-content\plugins\woocommerce\templates\archive-product.php(57): do_action('woocommerce_bef...')
+#6 C:\xampp\htdocs\shop\wp-includes\template-loader.php(74): include('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\shop\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\shop\index.php(17): require(
+
+2018-09-04T20:25:41+00:00 CRITICAL Uncaught Error: Call to undefined function woo_product_slider_id() in C:\xampp\htdocs\shop\wp-content\plugins\woocommerce\templates\loop\orderby.php:22
+Stack trace:
+#0 C:\xampp\htdocs\shop\wp-content\plugins\woocommerce\includes\wc-core-functions.php(210): include()
+#1 C:\xampp\htdocs\shop\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1330): wc_get_template('loop/orderby.ph...', Array)
+#2 C:\xampp\htdocs\shop\wp-includes\class-wp-hook.php(286): woocommerce_catalog_ordering('')
+#3 C:\xampp\htdocs\shop\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#4 C:\xampp\htdocs\shop\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\shop\wp-content\plugins\woocommerce\templates\archive-product.php(57): do_action('woocommerce_bef...')
+#6 C:\xampp\htdocs\shop\wp-includes\template-loader.php(74): include('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\shop\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\shop\index.php(17): require(
+
+2018-09-04T20:25:43+00:00 CRITICAL Uncaught Error: Call to undefined function woo_product_slider_id() in C:\xampp\htdocs\shop\wp-content\plugins\woocommerce\templates\loop\orderby.php:22
+Stack trace:
+#0 C:\xampp\htdocs\shop\wp-content\plugins\woocommerce\includes\wc-core-functions.php(210): include()
+#1 C:\xampp\htdocs\shop\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1330): wc_get_template('loop/orderby.ph...', Array)
+#2 C:\xampp\htdocs\shop\wp-includes\class-wp-hook.php(286): woocommerce_catalog_ordering('')
+#3 C:\xampp\htdocs\shop\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#4 C:\xampp\htdocs\shop\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\shop\wp-content\plugins\woocommerce\templates\archive-product.php(57): do_action('woocommerce_bef...')
+#6 C:\xampp\htdocs\shop\wp-includes\template-loader.php(74): include('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\shop\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\shop\index.php(17): require(
+
+2018-09-04T20:25:43+00:00 CRITICAL Uncaught Error: Call to undefined function woo_product_slider_id() in C:\xampp\htdocs\shop\wp-content\plugins\woocommerce\templates\loop\orderby.php:22
+Stack trace:
+#0 C:\xampp\htdocs\shop\wp-content\plugins\woocommerce\includes\wc-core-functions.php(210): include()
+#1 C:\xampp\htdocs\shop\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1330): wc_get_template('loop/orderby.ph...', Array)
+#2 C:\xampp\htdocs\shop\wp-includes\class-wp-hook.php(286): woocommerce_catalog_ordering('')
+#3 C:\xampp\htdocs\shop\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#4 C:\xampp\htdocs\shop\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\shop\wp-content\plugins\woocommerce\templates\archive-product.php(57): do_action('woocommerce_bef...')
+#6 C:\xampp\htdocs\shop\wp-includes\template-loader.php(74): include('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\shop\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\shop\index.php(17): require(
+
+2018-09-04T23:12:24+00:00 CRITICAL Uncaught Error: Call to undefined function woo_product_slider_id() in C:\xampp\htdocs\shop\wp-content\plugins\woocommerce\templates\loop\orderby.php:22
+Stack trace:
+#0 C:\xampp\htdocs\shop\wp-content\plugins\woocommerce\includes\wc-core-functions.php(210): include()
+#1 C:\xampp\htdocs\shop\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1330): wc_get_template('loop/orderby.ph...', Array)
+#2 C:\xampp\htdocs\shop\wp-includes\class-wp-hook.php(286): woocommerce_catalog_ordering('')
+#3 C:\xampp\htdocs\shop\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#4 C:\xampp\htdocs\shop\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\shop\wp-content\plugins\woocommerce\templates\archive-product.php(57): do_action('woocommerce_bef...')
+#6 C:\xampp\htdocs\shop\wp-includes\template-loader.php(74): include('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\shop\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\shop\index.php(17): require(
+
+2018-09-04T23:12:30+00:00 CRITICAL Uncaught Error: Call to undefined function woo_product_slider_id() in C:\xampp\htdocs\shop\wp-content\plugins\woocommerce\templates\loop\orderby.php:22
+Stack trace:
+#0 C:\xampp\htdocs\shop\wp-content\plugins\woocommerce\includes\wc-core-functions.php(210): include()
+#1 C:\xampp\htdocs\shop\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1330): wc_get_template('loop/orderby.ph...', Array)
+#2 C:\xampp\htdocs\shop\wp-includes\class-wp-hook.php(286): woocommerce_catalog_ordering('')
+#3 C:\xampp\htdocs\shop\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#4 C:\xampp\htdocs\shop\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\shop\wp-content\plugins\woocommerce\templates\archive-product.php(57): do_action('woocommerce_bef...')
+#6 C:\xampp\htdocs\shop\wp-includes\template-loader.php(74): include('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\shop\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\shop\index.php(17): require(
+
